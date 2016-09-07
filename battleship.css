@@ -2,18 +2,22 @@ body {
     margin: 60px auto;
     width: 70%;
     max-width: 950px;
+    font-family: 'Baloo Paaji', cursive;
+    background-image: url(http://wallpapercave.com/wp/nsbP94r.jpg);
 }
 
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+  font-family: 'Baloo Paaji', cursive;
 }
 
 p, button, input {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
+    color: black;
 	margin-bottom:1em;
+  font-family: 'Baloo Paaji', cursive;
+
 }
 
 #gameboard {
@@ -21,15 +25,16 @@ p, button, input {
 	margin:0 auto 2em auto;
 	width:500px;
 	height:500px;
+  font-family: 'Baloo Paaji', cursive;
 }
 
 #gameboard div {
 	position:absolute;
-	-webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
-	-moz-box-sizing: border-box;    /* Firefox 1 - 28 */
-	box-sizing: border-box;         /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
-	background: #f6f8f9; /* Old browsers */
-	border: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: transparent;
+	border: 1px solid black;
 	width:50px;
 	height:50px;
 }
@@ -44,4 +49,5 @@ p, button, input {
   position:relative;
   margin:0 auto 2em auto;
   width:500px;
+  
 }
