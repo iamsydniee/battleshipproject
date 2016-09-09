@@ -3,7 +3,7 @@ body {
     width: 70%;
     max-width: 950px;
     font-family: 'Baloo Paaji', cursive;
-    background-image: url(http://wallpapercave.com/wp/nsbP94r.jpg);
+    background-image: url(http://wallpapercave.com/wp/SvqeCF7.jpg);
 }
 
 h1 {
@@ -11,10 +11,19 @@ h1 {
   font-family: 'Baloo Paaji', cursive;
 }
 
-p, button, input {
+input , button{
+  font-size: 1.5em;
+  line-height: 1.4em;
+  color: black;
+margin-bottom:1em;
+font-family: 'Baloo Paaji', cursive;
+}
+
+
+p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: black;
+    color: white;
 	margin-bottom:1em;
   font-family: 'Baloo Paaji', cursive;
 
@@ -43,11 +52,13 @@ p, button, input {
   text-align: center;
   font-family: sans-serif;
   line-height: 50px;
+  color: grey;
 }
 
 #instructionsArea {
   position:relative;
   margin:0 auto 2em auto;
   width:500px;
-  
+  color: white;
+
 }

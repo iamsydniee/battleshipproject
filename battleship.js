@@ -2,6 +2,7 @@
 var rows = 10;
 var cols = 10;
 var squareSize = 50;
+var hitCount = 0;
 
 // gets the container element
 var gameBoardContainer = document.getElementById("gameboard");
@@ -61,14 +62,24 @@ var gameBoard = [
 				]
 
 				function fireTorpedo() {
+var userInput = $("#userInput").val();
+console.log("userInput" + userInput);
 var rowBeforeConversion = userInput.substring(0,1);
-var column = userInput.substring(1,2);
+var column = userInput.substring(1,3) - 1;
 row = letterConversion[rowBeforeConversion];
-gameBoard[row][column]
- if(){
-	 
+var myDivString = "#s" + row + column;
+var shotFired = gameBoard[row][column]
+ if(shotFired == 1){
+	$(myDivString).css("background-color", "red");
  }
- else if{
+ else {
+ $(myDivString).css("background-color", "grey");
+ }
+ }
 
- }
- }
+ if (hitCount == 17) {
+		$("#instructions").text(" YOU'VE SUNK ALL MY BATTLESHIPS!!!");
+		$("#gameBoard").hide()
+		$("instructionsArea").hide() 
+
+	}
