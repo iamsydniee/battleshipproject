@@ -77,9 +77,14 @@ var shotFired = gameBoard[row][column]
  }
  }
 
+function hitCount() {
+	for(i = 0; i < 18; i ++){
+		sum += i;
+	}
+}
+
  if (hitCount == 17) {
 		$("#instructions").text(" YOU'VE SUNK ALL MY BATTLESHIPS!!!");
 		$("#gameBoard").hide()
-		$("instructionsArea").hide() 
-
+		$("instructionsArea").hide()
 	}
