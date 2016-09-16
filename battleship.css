@@ -62,3 +62,14 @@ p {
   color: white;
 
 }
+
+#overLay {
+position: fixed;
+font-size: 10em;
+top: 0;
+width:500px;
+height: 500px;
+z-index: 500;
+color: purple;
+font-family: 'Baloo Paaji', cursive;
+text-align: center;

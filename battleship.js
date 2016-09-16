@@ -61,6 +61,8 @@ var gameBoard = [
 				[1,0,0,0,0,0,0,0,0,0]
 				]
 
+var overLay = $('<div id = "overLay"> Game Over </div>')
+
 				function fireTorpedo() {
 var userInput = $("#userInput").val();
 console.log("userInput" + userInput);
@@ -69,22 +71,21 @@ var column = userInput.substring(1,3) - 1;
 row = letterConversion[rowBeforeConversion];
 var myDivString = "#s" + row + column;
 var shotFired = gameBoard[row][column]
+
+
+
  if(shotFired == 1){
 	$(myDivString).css("background-color", "red");
+	  hitCount++;
+		console.log(hitCount);
  }
  else {
  $(myDivString).css("background-color", "grey");
  }
- }
 
-function hitCount() {
-	for(i = 0; i < 18; i ++){
-		sum += i;
-	}
+
+if (hitCount == 17) {
+	console.log("hitCount");
+	overLay.appendTo(document.body);
+		}
 }
-
- if (hitCount == 17) {
-		$("#instructions").text(" YOU'VE SUNK ALL MY BATTLESHIPS!!!");
-		$("#gameBoard").hide()
-		$("instructionsArea").hide()
-	}
